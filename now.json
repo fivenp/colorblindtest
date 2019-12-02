@@ -1,0 +1,12 @@
+{
+  "build": {
+    "env": {
+      "COLORBLIND_MIXPANEL_TOKEN": "@colorblind_mixpanel_token",
+      "COLORBLIND_GA_ID": "@colorblind_ga_id"
+    }
+  },
+  "env": {
+    "COLORBLIND_MIXPANEL_TOKEN": "@colorblind_mixpanel_token",
+    "COLORBLIND_GA_ID": "@colorblind_ga_id"
+  }
+}
