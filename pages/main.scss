@@ -1,6 +1,8 @@
 @import 'accecss.scss';
 
-
+html {
+  background-color: #fff;
+}
 // Mixin debug
 // @include debug(<true:false>, <true:false>, <false:filterName>, <false:elementName>);
 // Param :

@@ -48,7 +48,6 @@ const Head = (props: any) => (
     <meta name="msapplication-TileColor" content="#00004c" />
     <meta name="theme-color" content="#ffffff" />
 
-    <link rel="stylesheet" href="/static/default.css" />
     <meta property="og:url" content={props.url || defaultOGURL} />
     <meta property="og:title" content={props.title || ''} />
     <meta
