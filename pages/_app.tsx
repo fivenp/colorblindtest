@@ -9,7 +9,7 @@ import { useRouter } from 'next/router'
 import { MixpanelProvider } from 'react-mixpanel'
 import mixpanel from 'mixpanel-browser'
 
-mixpanel.init(process.env.COLORBLIND_MIXPANEL_TOKEN || 'adasdasdasdasdasd')
+mixpanel.init(process.env.COLORBLIND_MIXPANEL_TOKEN)
 
 if (typeof window !== `undefined`) {
   // hotjar.initialize('1518096', '6')
