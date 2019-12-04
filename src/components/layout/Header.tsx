@@ -3,6 +3,7 @@ import { jsx } from '@emotion/core'
 import { useState } from 'react'
 import NextLink from 'next/link'
 import { MixpanelConsumer } from 'react-mixpanel'
+// import mixpanel from 'mixpanel-browser'
 import {
   Box,
   Flex,
@@ -11,8 +12,6 @@ import {
   IconButton,
   useColorMode,
   Text,
-  Tag,
-  TagLabel,
   Stack,
   InputRightElement,
   Button,
@@ -21,7 +20,7 @@ import { FiSun, FiMoon } from 'react-icons/fi'
 import { Formik, Field } from 'formik'
 import Logo from '../Logo'
 
-const SearchBox = (props: any) => (
+export const SearchBox = (props: any) => (
   <InputGroup {...props}>
     <Formik
       initialValues={{ url: '' }}
@@ -70,6 +69,7 @@ const Header = (props: any) => {
   const { colorMode, toggleColorMode } = useColorMode()
 
   const switchColorFilter = (name: string, key: number) => {
+    // mixpanel.track('FilterSwitch',{filter:name})
     colorFilter === name ? setColorFilter('') : setColorFilter(name)
     document.body.className = colorFilter === name ? `` : `colorblind${key}`
   }

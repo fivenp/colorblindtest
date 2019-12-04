@@ -10,12 +10,13 @@ import { MixpanelProvider } from 'react-mixpanel'
 import mixpanel from 'mixpanel-browser'
 
 mixpanel.init(process.env.COLORBLIND_MIXPANEL_TOKEN)
+// mixpanel && mixpanel.track('PageView', { page: 'Index' })
 
-if (typeof window !== `undefined`) {
-  // hotjar.initialize('1518096', '6')
-  window.location.hostname === 'localhost' &&
-    mixpanel.register({ $ignore: 'true' })
-}
+// if (typeof window !== `undefined`) {
+//   // hotjar.initialize('1518096', '6')
+//   window.location.hostname === 'localhost' &&
+//     mixpanel && mixpanel.register({ $ignore: 'true' })
+// }
 
 // Only uncomment this method if you have blocking data requirements for
 // every single page in your application. This disables the ability to
