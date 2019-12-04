@@ -16,7 +16,7 @@ import {
   InputRightElement,
   Button,
 } from '@chakra-ui/core'
-import { FiSun, FiMoon } from 'react-icons/fi'
+import { FiSun, FiMoon, FiGithub } from 'react-icons/fi'
 import { Formik, Field } from 'formik'
 import Logo from '../Logo'
 
@@ -158,6 +158,16 @@ const Header = (props: any) => {
                   fontSize="20px"
                   onClick={toggleColorMode}
                   icon={colorMode === 'light' ? FiMoon : FiSun}
+                />
+                <IconButton
+                  display={{ sm: 'block', md: 'block' }}
+                  aria-label={`Open on Github`}
+                  variant="ghost"
+                  color="current"
+                  ml="2"
+                  fontSize="20px"
+                  icon={FiGithub}
+                  onClick={()=>{window.location.href = "https://github.com/fivenp/colorblindtest"}}
                 />
               </Flex>
             </Flex>
