@@ -2,7 +2,7 @@ import React from 'react'
 import NextHead from 'next/head'
 import { string } from 'prop-types'
 
-const defaultDescription = 'Share'
+const defaultDescription = 'See your product, website or graphics with the eyes of Color Blind people. We hope to help you identify areas with accessability issues.'
 const defaultOGURL = 'https://colorblindtest.now.sh'
 const defaultOGImage =
   'https://colorblindtest.now.sh/static/seo/og-img-default.png'
@@ -11,7 +11,7 @@ const defaultOGType = 'website'
 const Head = (props: any) => (
   <NextHead>
     <meta charSet="UTF-8" />
-    <title>{props.title || ''}</title>
+    <title>{props.title || 'Color Blind Test – Test your website / prodcut / image against color blindness filters'}</title>
     <meta
       name="description"
       content={props.description || defaultDescription}
